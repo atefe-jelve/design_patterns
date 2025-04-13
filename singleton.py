@@ -7,7 +7,7 @@ class Singleton:
     _instance = None
 
     def __call__(self, *args, **kwargs):
-        if self._instance in None:
+        if self._instance is None:
             self._instance = super().__class__()
         return self._instance
 
